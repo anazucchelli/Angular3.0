@@ -10,7 +10,9 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-de-produtos.component';
 import { GruposComponent } from './components/grupos/grupos.component';
 import { HttpClientModule } from "@angular/common/http";
-import { ProdutoComponent } from './components/produto/produto.component'
+import { ProdutoComponent } from './components/produto/produto.component';
+import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { ProdutoComponent } from './components/produto/produto.component'
     ContatoComponent,
     ListaDeProdutosComponent,
     GruposComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    NovoProdutoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
